@@ -395,6 +395,17 @@ app.get('/api/search/:key',async(req,res) => {
   
   
 })
+//------------------------------------------------------------
+app.get('/*',function(req,res) {
+  res.sendFile(
+    path.join(__dirname,"../client/build/index.html"),
+    function(err) {
+      if(err) {
+        res.status(500).send(err);
+      }
+    }
+  )
+})
 //--------------sets server port and logs message-----------------------------------------------------
 app.listen(port,() => {
     console.log(`listening on port ${port}`)
