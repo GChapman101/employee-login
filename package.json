@@ -6,6 +6,10 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start":"cd backend && node server.js"
   },
+  "egines":{
+    "node":20.18
+
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
