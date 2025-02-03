@@ -16,7 +16,7 @@ app.use(express.json())
 app.use(cors({
   origin:"http://localhost:3000",
 }));
-const port = process.env.PORT ||4000;
+const Port = process.env.PORT ||4000;
 const db = knex({
     client: 'pg',
     connection: {
@@ -407,6 +407,6 @@ app.get('/*',function(req,res) {
   )
 })
 //--------------sets server port and logs message-----------------------------------------------------
-app.listen(port,() => {
-    console.log(`listening on port ${port}`)
+app.listen(Port,() => {
+    console.log(`listening on port ${Port}`)
 })
