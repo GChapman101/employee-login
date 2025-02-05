@@ -1,16 +1,19 @@
 {
   "name": "server.js",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "web.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "cd backend && node server.js"
   },
-  "egines": {
+  "engines": {
     "node": "22.13.1"
   },
-  "keywords": [],
+  "keywords": [
+    "heroku"
+  ],
   "author": "",
+ 
   "license": "ISC",
   "description": "",
   "dependencies": {
